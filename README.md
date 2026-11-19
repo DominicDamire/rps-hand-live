@@ -10,7 +10,7 @@ Rock-paper-scissors in the browser with live hand tracking: MediaPipe finds the 
 
 ![Demo: a tracked hand goes from scissors to paper to rock and the rigged 3D hand beside it copies each pose](demo.gif)
 
-**Live demo:** https://dominicdamire.github.io/rps-hand-demo/ · no camera? [Try the sample image](https://dominicdamire.github.io/rps-hand-demo/?img=victory.jpg)
+**Live demo:** https://dominicdamire.github.io/rps-hand-live/ · no camera? [Try the sample image](https://dominicdamire.github.io/rps-hand-live/?img=victory.jpg)
 
 ![RPS Hand in sample mode: the tracked peace sign on the left, the 3D hand copying it on the right](screens/home.png)
 
@@ -18,17 +18,17 @@ Rock-paper-scissors in the browser with live hand tracking: MediaPipe finds the 
 
 ## Modes
 
-Later work built on the same tracker, all running in the browser. The [live page](https://dominicdamire.github.io/rps-hand-demo/#modes) lists them below the game.
+Later work built on the same tracker, all running in the browser. The [live page](https://dominicdamire.github.io/rps-hand-live/#modes) lists them below the game.
 
 | | |
 |---|---|
-| <a href="https://dominicdamire.github.io/rps-hand-demo/hand-pnp-photo/?v=motion5"><img src="modes/pnp-depth-lab.png" alt="PnP depth lab" width="260"></a> | **[PnP depth lab](https://dominicdamire.github.io/rps-hand-demo/hand-pnp-photo/?v=motion5)**<br>Palm pose from a single camera by PnP depth: a fixed-size rigged 3D hand copies your tracked hand live next to a tracked alien head, with a pixel-error readout.<br><sub>Camera</sub> |
-| <a href="https://dominicdamire.github.io/rps-hand-demo/hand-demo/"><img src="modes/alien-head-lab.png" alt="Alien head lab" width="260"></a> | **[Alien head lab](https://dominicdamire.github.io/rps-hand-demo/hand-demo/)**<br>Face and hands tracked together: a 3D alien head, neck and shoulders beside the hands, plus one-hand sweep and depth experiments. Has a sample image.<br><sub>Camera or sample</sub> |
-| <a href="https://dominicdamire.github.io/rps-hand-demo/hand-ninja/"><img src="modes/hand-ninja.png" alt="Hand Ninja" width="260"></a> | **[Hand Ninja](https://dominicdamire.github.io/rps-hand-demo/hand-ninja/)**<br>Fruit Ninja with bare hands: a phone tracks your hands, a PC shows the fruit; pair them with a code or QR. Fast passes slice, fists crush.<br><sub>Phone + PC</sub> |
-| <a href="https://dominicdamire.github.io/rps-hand-demo/movement/"><img src="modes/movement.png" alt="Movement" width="260"></a> | **[Movement](https://dominicdamire.github.io/rps-hand-demo/movement/)**<br>Walk, shoot and punch a bag with a finger joystick and head look, on a flat test floor, with a phone-as-camera link.<br><sub>Camera</sub> |
-| <a href="https://dominicdamire.github.io/rps-hand-demo/hand-range/?v=range1"><img src="modes/shooting-range.png" alt="Shooting range" width="260"></a> | **[Shooting range](https://dominicdamire.github.io/rps-hand-demo/hand-range/?v=range1)**<br>First-person range with two tracked hands, a head-tracked view, a pistol with a saved grip and five targets.<br><sub>Camera</sub> |
-| <a href="https://dominicdamire.github.io/rps-hand-demo/hand-pnp-gun/?v=motion5"><img src="modes/pnp-gun-lab.png" alt="PnP gun lab" width="260"></a> | **[PnP gun lab](https://dominicdamire.github.io/rps-hand-demo/hand-pnp-gun/?v=motion5)**<br>The PnP hand with a pistol: pick it up by closing three fingers, bend the index to fire.<br><sub>Camera</sub> |
-| <a href="https://dominicdamire.github.io/rps-hand-demo/gun-lab/"><img src="modes/gun-grip-lab.png" alt="Gun grip lab" width="260"></a> | **[Gun grip lab](https://dominicdamire.github.io/rps-hand-demo/gun-lab/)**<br>Pose every finger joint of the gun grip, preview it on the 3D hand and export it as JSON. No camera needed; a camera range is linked from the page.<br><sub>No camera needed</sub> |
+| <a href="https://dominicdamire.github.io/rps-hand-live/hand-pnp-photo/?v=motion5"><img src="modes/pnp-depth-lab.png" alt="PnP depth lab" width="260"></a> | **[PnP depth lab](https://dominicdamire.github.io/rps-hand-live/hand-pnp-photo/?v=motion5)**<br>Palm pose from a single camera by PnP depth: a fixed-size rigged 3D hand copies your tracked hand live next to a tracked alien head, with a pixel-error readout.<br><sub>Camera</sub> |
+| <a href="https://dominicdamire.github.io/rps-hand-live/hand-demo/"><img src="modes/alien-head-lab.png" alt="Alien head lab" width="260"></a> | **[Alien head lab](https://dominicdamire.github.io/rps-hand-live/hand-demo/)**<br>Face and hands tracked together: a 3D alien head, neck and shoulders beside the hands, plus one-hand sweep and depth experiments. Has a sample image.<br><sub>Camera or sample</sub> |
+| <a href="https://dominicdamire.github.io/rps-hand-live/hand-ninja/"><img src="modes/hand-ninja.png" alt="Hand Ninja" width="260"></a> | **[Hand Ninja](https://dominicdamire.github.io/rps-hand-live/hand-ninja/)**<br>Fruit Ninja with bare hands: a phone tracks your hands, a PC shows the fruit; pair them with a code or QR. Fast passes slice, fists crush.<br><sub>Phone + PC</sub> |
+| <a href="https://dominicdamire.github.io/rps-hand-live/movement/"><img src="modes/movement.png" alt="Movement" width="260"></a> | **[Movement](https://dominicdamire.github.io/rps-hand-live/movement/)**<br>Walk, shoot and punch a bag with a finger joystick and head look, on a flat test floor, with a phone-as-camera link.<br><sub>Camera</sub> |
+| <a href="https://dominicdamire.github.io/rps-hand-live/hand-range/?v=range1"><img src="modes/shooting-range.png" alt="Shooting range" width="260"></a> | **[Shooting range](https://dominicdamire.github.io/rps-hand-live/hand-range/?v=range1)**<br>First-person range with two tracked hands, a head-tracked view, a pistol with a saved grip and five targets.<br><sub>Camera</sub> |
+| <a href="https://dominicdamire.github.io/rps-hand-live/hand-pnp-gun/?v=motion5"><img src="modes/pnp-gun-lab.png" alt="PnP gun lab" width="260"></a> | **[PnP gun lab](https://dominicdamire.github.io/rps-hand-live/hand-pnp-gun/?v=motion5)**<br>The PnP hand with a pistol: pick it up by closing three fingers, bend the index to fire.<br><sub>Camera</sub> |
+| <a href="https://dominicdamire.github.io/rps-hand-live/gun-lab/"><img src="modes/gun-grip-lab.png" alt="Gun grip lab" width="260"></a> | **[Gun grip lab](https://dominicdamire.github.io/rps-hand-live/gun-lab/)**<br>Pose every finger joint of the gun grip, preview it on the 3D hand and export it as JSON. No camera needed; a camera range is linked from the page.<br><sub>No camera needed</sub> |
 
 A camera mode needs camera access on HTTPS or `localhost`; the lab pages also have a sample-image button. Hand Ninja pairs two browsers through the public PeerJS broker, so it needs internet access but no server of ours.
 
